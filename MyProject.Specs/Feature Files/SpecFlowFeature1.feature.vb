@@ -13,23 +13,23 @@
 '#pragma warning disable
 Imports TechTalk.SpecFlow
 
-Namespace MyProject.Specs
+Namespace MyProject.Specs.FeatureFiles
     
     <System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.9.0.77"),  _
      System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      NUnit.Framework.TestFixtureAttribute(),  _
-     NUnit.Framework.DescriptionAttribute("MyProjecttestFeature1")>  _
-    Partial Public Class MyProjecttestFeature1Feature
+     NUnit.Framework.DescriptionAttribute("SpecFlowFeature1")>  _
+    Partial Public Class SpecFlowFeature1Feature
         
         Private Shared testRunner As TechTalk.SpecFlow.ITestRunner
         
-#ExternalSource("MyProjecttestFeature1.feature",1)
+#ExternalSource("SpecFlowFeature1.feature",1)
 #End ExternalSource
         
         <NUnit.Framework.TestFixtureSetUpAttribute()>  _
         Public Overridable Sub FeatureSetup()
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner
-            Dim featureInfo As TechTalk.SpecFlow.FeatureInfo = New TechTalk.SpecFlow.FeatureInfo(New System.Globalization.CultureInfo("en-US"), "MyProjecttestFeature1", "In order to avoid silly mistakes"&Global.Microsoft.VisualBasic.ChrW(10)&"As a math idiot"&Global.Microsoft.VisualBasic.ChrW(10)&"I want to be told the sum of two"& _ 
+            Dim featureInfo As TechTalk.SpecFlow.FeatureInfo = New TechTalk.SpecFlow.FeatureInfo(New System.Globalization.CultureInfo("en-US"), "SpecFlowFeature1", "In order to avoid silly mistakes"&Global.Microsoft.VisualBasic.ChrW(10)&"As a math idiot"&Global.Microsoft.VisualBasic.ChrW(10)&"I want to be told the sum of two"& _ 
                     " numbers", ProgrammingLanguage.VB, CType(Nothing,String()))
             testRunner.OnFeatureStart(featureInfo)
         End Sub
@@ -62,19 +62,19 @@ Namespace MyProject.Specs
          NUnit.Framework.CategoryAttribute("mytag")>  _
         Public Overridable Sub AddTwoNumbers()
             Dim scenarioInfo As TechTalk.SpecFlow.ScenarioInfo = New TechTalk.SpecFlow.ScenarioInfo("Add two numbers", New String() {"mytag"})
-#ExternalSource("MyProjecttestFeature1.feature",7)
+#ExternalSource("SpecFlowFeature1.feature",7)
 Me.ScenarioSetup(scenarioInfo)
 #End ExternalSource
-#ExternalSource("MyProjecttestFeature1.feature",8)
+#ExternalSource("SpecFlowFeature1.feature",8)
  testRunner.Given("I have entered 50 into the calculator", CType(Nothing,String), CType(Nothing,TechTalk.SpecFlow.Table), "Given ")
 #End ExternalSource
-#ExternalSource("MyProjecttestFeature1.feature",9)
+#ExternalSource("SpecFlowFeature1.feature",9)
  testRunner.And("I have entered 70 into the calculator", CType(Nothing,String), CType(Nothing,TechTalk.SpecFlow.Table), "And ")
 #End ExternalSource
-#ExternalSource("MyProjecttestFeature1.feature",10)
+#ExternalSource("SpecFlowFeature1.feature",10)
  testRunner.When("I press add", CType(Nothing,String), CType(Nothing,TechTalk.SpecFlow.Table), "When ")
 #End ExternalSource
-#ExternalSource("MyProjecttestFeature1.feature",11)
+#ExternalSource("SpecFlowFeature1.feature",11)
  testRunner.Then("the result should be 120 on the screen", CType(Nothing,String), CType(Nothing,TechTalk.SpecFlow.Table), "Then ")
 #End ExternalSource
             Me.ScenarioCleanup
