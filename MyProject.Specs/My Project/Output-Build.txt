@@ -1,0 +1,3 @@
+﻿------ Build started: Project: MyProject.Specs, Configuration: Release Any CPU ------
+  MyProject.Specs -> C:\Users\kerri.mansfield\Documents\Visual Studio 2013\Projects\MyProject.Specs\MyProject.Specs\bin\Release\MyProject.Specs.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
